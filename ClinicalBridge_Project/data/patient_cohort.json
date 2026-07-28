@@ -1,0 +1,536 @@
+{
+  "patients": [
+    {
+      "patient_id": "P-1001",
+      "demographics": {
+        "age": 72,
+        "gender": "Male",
+        "living_situation": "Lives alone"
+      },
+      "diagnoses": [
+        "Congestive Heart Failure (CHF)",
+        "Type 2 Diabetes Mellitus"
+      ],
+      "active_medications": [
+        {
+          "name": "Furosemide",
+          "dosage": "40mg",
+          "frequency": "Daily",
+          "indication": "CHF"
+        },
+        {
+          "name": "Metformin",
+          "dosage": "1000mg",
+          "frequency": "BID",
+          "indication": "Diabetes"
+        }
+      ],
+      "recent_labs": [
+        {
+          "test": "Potassium",
+          "value": 3.8,
+          "unit": "mEq/L",
+          "date": "2023-10-01",
+          "status": "Normal"
+        },
+        {
+          "test": "BNP",
+          "value": 450,
+          "unit": "pg/mL",
+          "date": "2023-10-01",
+          "status": "Elevated"
+        }
+      ],
+      "clinical_notes": "Patient has a history of medication non-adherence due to transportation issues to the pharmacy."
+    },
+    {
+      "patient_id": "P-1002",
+      "demographics": {
+        "age": 55,
+        "gender": "Female",
+        "living_situation": "Lives with spouse"
+      },
+      "diagnoses": [
+        "Essential Hypertension"
+      ],
+      "active_medications": [
+        {
+          "name": "Lisinopril",
+          "dosage": "10mg",
+          "frequency": "Daily",
+          "indication": "Hypertension"
+        }
+      ],
+      "recent_labs": [
+        {
+          "test": "Creatinine",
+          "value": 0.9,
+          "unit": "mg/dL",
+          "date": "2023-09-15",
+          "status": "Normal"
+        }
+      ],
+      "clinical_notes": "Patient experiences 'white coat syndrome' but home BP is usually well-controlled."
+    },
+    {
+      "patient_id": "P-1003",
+      "demographics": {
+        "age": 68,
+        "gender": "Female",
+        "living_situation": "Assisted Living Facility"
+      },
+      "diagnoses": [
+        "COPD",
+        "Osteoarthritis"
+      ],
+      "active_medications": [
+        {
+          "name": "Albuterol Inhaler",
+          "dosage": "2 puffs",
+          "frequency": "PRN",
+          "indication": "COPD"
+        },
+        {
+          "name": "Ibuprofen",
+          "dosage": "400mg",
+          "frequency": "PRN",
+          "indication": "Pain"
+        }
+      ],
+      "recent_labs": [
+        {
+          "test": "WBC",
+          "value": 8.5,
+          "unit": "x10^3/uL",
+          "date": "2023-08-20",
+          "status": "Normal"
+        }
+      ],
+      "clinical_notes": "Recent hospital admission for COPD exacerbation in July 2023. Discharged on room air."
+    },
+    {
+      "patient_id": "P-1004",
+      "demographics": {
+        "age": 45,
+        "gender": "Male",
+        "living_situation": "Lives with family"
+      },
+      "diagnoses": [
+        "Asthma"
+      ],
+      "active_medications": [
+        {
+          "name": "Fluticasone",
+          "dosage": "1 puff",
+          "frequency": "BID",
+          "indication": "Asthma controller"
+        }
+      ],
+      "recent_labs": [],
+      "clinical_notes": "Records missing from previous primary care provider; current records are incomplete."
+    },
+    {
+      "patient_id": "P-1005",
+      "demographics": {
+        "age": 82,
+        "gender": "Female",
+        "living_situation": "Lives alone"
+      },
+      "diagnoses": [
+        "Atrial Fibrillation",
+        "Chronic Kidney Disease Stage 3"
+      ],
+      "active_medications": [
+        {
+          "name": "Apixaban",
+          "dosage": "5mg",
+          "frequency": "BID",
+          "indication": "A-Fib"
+        },
+        {
+          "name": "Metoprolol",
+          "dosage": "25mg",
+          "frequency": "Daily",
+          "indication": "Rate control"
+        }
+      ],
+      "recent_labs": [
+        {
+          "test": "eGFR",
+          "value": 45,
+          "unit": "mL/min/1.73m2",
+          "date": "2023-10-05",
+          "status": "Low"
+        },
+        {
+          "test": "Hemoglobin",
+          "value": 11.2,
+          "unit": "g/dL",
+          "date": "2023-10-05",
+          "status": "Low-Normal"
+        }
+      ],
+      "clinical_notes": "Fall risk. Instructed to monitor for any signs of bleeding due to anticoagulation."
+    },
+    {
+      "patient_id": "P-1006",
+      "demographics": {
+        "age": 61,
+        "gender": "Male",
+        "living_situation": "Lives with family"
+      },
+      "diagnoses": [
+        "Hypertension",
+        "Hyperlipidemia"
+      ],
+      "active_medications": [
+        {
+          "name": "Amlodipine",
+          "dosage": "5mg",
+          "frequency": "Daily",
+          "indication": "Hypertension"
+        },
+        {
+          "name": "Atorvastatin",
+          "dosage": "20mg",
+          "frequency": "Daily",
+          "indication": "Cholesterol"
+        }
+      ],
+      "recent_labs": [
+        {
+          "test": "LDL",
+          "value": 110,
+          "unit": "mg/dL",
+          "date": "2023-09-01",
+          "status": "Slightly Elevated"
+        }
+      ],
+      "clinical_notes": "Routine chronic care patient. No recent acute events."
+    },
+    {
+      "patient_id": "P-1007",
+      "demographics": {
+        "age": 62,
+        "gender": "Female",
+        "living_situation": "Lives with family"
+      },
+      "diagnoses": [
+        "Hypertension",
+        "Hyperlipidemia"
+      ],
+      "active_medications": [
+        {
+          "name": "Amlodipine",
+          "dosage": "5mg",
+          "frequency": "Daily",
+          "indication": "Hypertension"
+        },
+        {
+          "name": "Atorvastatin",
+          "dosage": "20mg",
+          "frequency": "Daily",
+          "indication": "Cholesterol"
+        }
+      ],
+      "recent_labs": [
+        {
+          "test": "LDL",
+          "value": 110,
+          "unit": "mg/dL",
+          "date": "2023-09-01",
+          "status": "Slightly Elevated"
+        }
+      ],
+      "clinical_notes": "Routine chronic care patient. No recent acute events."
+    },
+    {
+      "patient_id": "P-1008",
+      "demographics": {
+        "age": 63,
+        "gender": "Male",
+        "living_situation": "Lives with family"
+      },
+      "diagnoses": [
+        "Hypertension",
+        "Hyperlipidemia"
+      ],
+      "active_medications": [
+        {
+          "name": "Amlodipine",
+          "dosage": "5mg",
+          "frequency": "Daily",
+          "indication": "Hypertension"
+        },
+        {
+          "name": "Atorvastatin",
+          "dosage": "20mg",
+          "frequency": "Daily",
+          "indication": "Cholesterol"
+        }
+      ],
+      "recent_labs": [
+        {
+          "test": "LDL",
+          "value": 110,
+          "unit": "mg/dL",
+          "date": "2023-09-01",
+          "status": "Slightly Elevated"
+        }
+      ],
+      "clinical_notes": "Routine chronic care patient. No recent acute events."
+    },
+    {
+      "patient_id": "P-1009",
+      "demographics": {
+        "age": 64,
+        "gender": "Female",
+        "living_situation": "Lives with family"
+      },
+      "diagnoses": [
+        "Hypertension",
+        "Hyperlipidemia"
+      ],
+      "active_medications": [
+        {
+          "name": "Amlodipine",
+          "dosage": "5mg",
+          "frequency": "Daily",
+          "indication": "Hypertension"
+        },
+        {
+          "name": "Atorvastatin",
+          "dosage": "20mg",
+          "frequency": "Daily",
+          "indication": "Cholesterol"
+        }
+      ],
+      "recent_labs": [
+        {
+          "test": "LDL",
+          "value": 110,
+          "unit": "mg/dL",
+          "date": "2023-09-01",
+          "status": "Slightly Elevated"
+        }
+      ],
+      "clinical_notes": "Routine chronic care patient. No recent acute events."
+    },
+    {
+      "patient_id": "P-1010",
+      "demographics": {
+        "age": 65,
+        "gender": "Male",
+        "living_situation": "Lives with family"
+      },
+      "diagnoses": [
+        "Hypertension",
+        "Hyperlipidemia"
+      ],
+      "active_medications": [
+        {
+          "name": "Amlodipine",
+          "dosage": "5mg",
+          "frequency": "Daily",
+          "indication": "Hypertension"
+        },
+        {
+          "name": "Atorvastatin",
+          "dosage": "20mg",
+          "frequency": "Daily",
+          "indication": "Cholesterol"
+        }
+      ],
+      "recent_labs": [
+        {
+          "test": "LDL",
+          "value": 110,
+          "unit": "mg/dL",
+          "date": "2023-09-01",
+          "status": "Slightly Elevated"
+        }
+      ],
+      "clinical_notes": "Routine chronic care patient. No recent acute events."
+    },
+    {
+      "patient_id": "P-1011",
+      "demographics": {
+        "age": 66,
+        "gender": "Female",
+        "living_situation": "Lives with family"
+      },
+      "diagnoses": [
+        "Hypertension",
+        "Hyperlipidemia"
+      ],
+      "active_medications": [
+        {
+          "name": "Amlodipine",
+          "dosage": "5mg",
+          "frequency": "Daily",
+          "indication": "Hypertension"
+        },
+        {
+          "name": "Atorvastatin",
+          "dosage": "20mg",
+          "frequency": "Daily",
+          "indication": "Cholesterol"
+        }
+      ],
+      "recent_labs": [
+        {
+          "test": "LDL",
+          "value": 110,
+          "unit": "mg/dL",
+          "date": "2023-09-01",
+          "status": "Slightly Elevated"
+        }
+      ],
+      "clinical_notes": "Routine chronic care patient. No recent acute events."
+    },
+    {
+      "patient_id": "P-1012",
+      "demographics": {
+        "age": 67,
+        "gender": "Male",
+        "living_situation": "Lives with family"
+      },
+      "diagnoses": [
+        "Hypertension",
+        "Hyperlipidemia"
+      ],
+      "active_medications": [
+        {
+          "name": "Amlodipine",
+          "dosage": "5mg",
+          "frequency": "Daily",
+          "indication": "Hypertension"
+        },
+        {
+          "name": "Atorvastatin",
+          "dosage": "20mg",
+          "frequency": "Daily",
+          "indication": "Cholesterol"
+        }
+      ],
+      "recent_labs": [
+        {
+          "test": "LDL",
+          "value": 110,
+          "unit": "mg/dL",
+          "date": "2023-09-01",
+          "status": "Slightly Elevated"
+        }
+      ],
+      "clinical_notes": "Routine chronic care patient. No recent acute events."
+    },
+    {
+      "patient_id": "P-1013",
+      "demographics": {
+        "age": 68,
+        "gender": "Female",
+        "living_situation": "Lives with family"
+      },
+      "diagnoses": [
+        "Hypertension",
+        "Hyperlipidemia"
+      ],
+      "active_medications": [
+        {
+          "name": "Amlodipine",
+          "dosage": "5mg",
+          "frequency": "Daily",
+          "indication": "Hypertension"
+        },
+        {
+          "name": "Atorvastatin",
+          "dosage": "20mg",
+          "frequency": "Daily",
+          "indication": "Cholesterol"
+        }
+      ],
+      "recent_labs": [
+        {
+          "test": "LDL",
+          "value": 110,
+          "unit": "mg/dL",
+          "date": "2023-09-01",
+          "status": "Slightly Elevated"
+        }
+      ],
+      "clinical_notes": "Routine chronic care patient. No recent acute events."
+    },
+    {
+      "patient_id": "P-1014",
+      "demographics": {
+        "age": 69,
+        "gender": "Male",
+        "living_situation": "Lives with family"
+      },
+      "diagnoses": [
+        "Hypertension",
+        "Hyperlipidemia"
+      ],
+      "active_medications": [
+        {
+          "name": "Amlodipine",
+          "dosage": "5mg",
+          "frequency": "Daily",
+          "indication": "Hypertension"
+        },
+        {
+          "name": "Atorvastatin",
+          "dosage": "20mg",
+          "frequency": "Daily",
+          "indication": "Cholesterol"
+        }
+      ],
+      "recent_labs": [
+        {
+          "test": "LDL",
+          "value": 110,
+          "unit": "mg/dL",
+          "date": "2023-09-01",
+          "status": "Slightly Elevated"
+        }
+      ],
+      "clinical_notes": "Routine chronic care patient. No recent acute events."
+    },
+    {
+      "patient_id": "P-1015",
+      "demographics": {
+        "age": 70,
+        "gender": "Female",
+        "living_situation": "Lives with family"
+      },
+      "diagnoses": [
+        "Hypertension",
+        "Hyperlipidemia"
+      ],
+      "active_medications": [
+        {
+          "name": "Amlodipine",
+          "dosage": "5mg",
+          "frequency": "Daily",
+          "indication": "Hypertension"
+        },
+        {
+          "name": "Atorvastatin",
+          "dosage": "20mg",
+          "frequency": "Daily",
+          "indication": "Cholesterol"
+        }
+      ],
+      "recent_labs": [
+        {
+          "test": "LDL",
+          "value": 110,
+          "unit": "mg/dL",
+          "date": "2023-09-01",
+          "status": "Slightly Elevated"
+        }
+      ],
+      "clinical_notes": "Routine chronic care patient. No recent acute events."
+    }
+  ]
+}

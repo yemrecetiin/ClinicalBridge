@@ -1,0 +1,89 @@
+{
+  "scenarios": [
+    {
+      "scenario_id": "S1",
+      "name": "The Missed Medication",
+      "patient_id": "P-1001",
+      "rpm_alert": {
+        "timestamp": "2023-10-15T08:00:00Z",
+        "source": "Smart Scale",
+        "metric": "Weight",
+        "value": "195 lbs",
+        "baseline": "188 lbs",
+        "alert_type": "Rapid Weight Gain (+7 lbs in 3 days)",
+        "severity": "High"
+      },
+      "anamnesis_input": "I ran out of my water pill three days ago. My daughter couldn't take me to the pharmacy. My ankles feel a bit swollen today.",
+      "expected_triage_level": "Urgent",
+      "clinical_context": "Patient has CHF. Missing Furosemide leads directly to fluid retention (weight gain and edema). Needs prescription refill and urgent follow-up."
+    },
+    {
+      "scenario_id": "S2",
+      "name": "The False Alarm",
+      "patient_id": "P-1002",
+      "rpm_alert": {
+        "timestamp": "2023-10-16T09:30:00Z",
+        "source": "Home BP Monitor",
+        "metric": "Blood Pressure",
+        "value": "180/100 mmHg",
+        "baseline": "125/80 mmHg",
+        "alert_type": "Hypertensive Crisis threshold",
+        "severity": "Critical"
+      },
+      "anamnesis_input": "I took my pressure right after arguing with my internet provider on the phone while walking up the stairs. I rested for 15 minutes and took it again, and it was 132/85.",
+      "expected_triage_level": "Routine",
+      "clinical_context": "High initial reading was environmentally induced. Patient verified a normal subsequent reading. No acute medical intervention required."
+    },
+    {
+      "scenario_id": "S3",
+      "name": "The Silent Deterioration",
+      "patient_id": "P-1003",
+      "rpm_alert": {
+        "timestamp": "2023-10-17T02:00:00Z",
+        "source": "Pulse Oximeter",
+        "metric": "SpO2",
+        "value": "86%",
+        "baseline": "93%",
+        "alert_type": "Hypoxia",
+        "severity": "Critical"
+      },
+      "anamnesis_input": "I feel okay, just a little tired and my cough is acting up more than usual. The machine keeps beeping but I'm just going back to sleep.",
+      "expected_triage_level": "Critical",
+      "clinical_context": "COPD patient dismissing objective hypoxia. High risk of respiratory failure. Needs immediate escalation despite patient's lack of distress."
+    },
+    {
+      "scenario_id": "S4",
+      "name": "The Incomplete Record",
+      "patient_id": "P-1004",
+      "rpm_alert": {
+        "timestamp": "2023-10-18T14:00:00Z",
+        "source": "Smart Inhaler",
+        "metric": "Inhaler Usage",
+        "value": "12 puffs in 24h",
+        "baseline": "0-2 puffs in 24h",
+        "alert_type": "High Rescue Inhaler Usage",
+        "severity": "Urgent"
+      },
+      "anamnesis_input": "I've been using my rescue inhaler a lot because my chest is super tight. I'm taking some pill my old doctor gave me but I don't know the name.",
+      "expected_triage_level": "Urgent",
+      "clinical_context": "EHR is missing the patient's full medication list (only shows Fluticasone). AI must flag the unknown medication and lack of context, escalating for clinical review."
+    },
+    {
+      "scenario_id": "S5",
+      "name": "The Conflicting Data",
+      "patient_id": "P-1005",
+      "rpm_alert": {
+        "timestamp": "2023-10-19T10:15:00Z",
+        "source": "Smart Watch",
+        "metric": "Heart Rate",
+        "value": "115 bpm",
+        "baseline": "70 bpm",
+        "alert_type": "Tachycardia",
+        "severity": "Urgent"
+      },
+      "anamnesis_input": "I've been feeling dizzy when I stand up. And my stool has looked completely black and tarry for the last two days.",
+      "expected_triage_level": "Critical",
+      "clinical_context": "Patient is on Apixaban. Tachycardia + dizzy + melena (black stool) indicates acute GI bleed. The device flags tachycardia, but the anamnesis reveals a bleeding emergency. Must escalate immediately."
+    }
+  ]
+}
