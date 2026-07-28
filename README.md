@@ -1,2 +1,33 @@
-# ClinicalBridge
-ClinicalBridge is an LLM-powered clinical decision-support prototype that unifies RPM, EHR, and Anamnesis data using n8n and Google Gemini. It benchmarked Multi-Agent and Sequential Pipeline architectures to transform physiological alerts into structured Clinical Context Briefs (CCB) and reduce alert fatigue.
+# 🩺 ClinicalBridge: Bridging the Clinical Context Gap
+
+[![Course](https://img.shields.io/badge/Course-COP--3442%3A%20Prompt%20Engineering-blue)](https://bau.edu.tr/)
+[![University](https://img.shields.io/badge/University-Bah%C3%A7e%C5%9Fehir%20University-red)](https://bau.edu.tr/)
+[![Framework](https://img.shields.io/badge/Orchestration-n8n-orange)](https://n8n.io/)
+[![Model](https://img.shields.io/badge/LLM-Google%20Gemini-green)](https://deepmind.google/technologies/gemini/)
+
+> **An LLM-Powered Decision Support Ecosystem Comparing Multi-Agent Architecture and Sequential Pipeline Interventions**
+
+---
+
+## 📌 Project Overview
+**ClinicalBridge** is an advanced, context-aware clinical decision-support prototype engineered to resolve severe data fragmentation in modern healthcare informatics. The platform unifies three traditionally isolated clinical health data silos:
+* 🏛️ **Electronic Health Records (EHR):** Longitudinal medical history, diagnostic codes, and lab baselines.
+* ⌚ **Remote Patient Monitoring (RPM):** Continuous, real-time wearable biometric readings.
+* 🗣️ **Anamnesis:** Subjective patient-reported symptom logs and medication adherence profiles.
+
+By synthesizing volatile Remote Patient Monitoring (RPM) alerts with historical and subjective patient data, ClinicalBridge generates a structured **Clinical Context Brief (CCB)** in under 60 seconds. This drastically reduces physician cognitive load and mitigates **alert fatigue** without compromising patient safety.
+
+---
+
+## 👥 Authors & Team
+* **Yusuf Emre Çetin** (Student ID: `2102915`) - *Core Multi-Agent Orchestration, Webhook Architecture & Synthesis Node Engineering*
+* **Ayberk Palta** (Student ID: `2103386`) - *EHR Data Pipeline Development, Vector Database Management & RAG Integration*
+* **Görkem Dal** (Student ID: `2103773`) - *Sequential Pipeline Chain Engineering, Anamnesis Simulation & Token Optimization*
+
+**Academic Mentorship:** Artificial Intelligence Engineering Department, Bahçeşehir University (June 2026).
+
+---
+
+## 🏗️ Dual System Architecture
+
+This capstone project implements and empirically benchmarks **two distinct structural paradigms**:
