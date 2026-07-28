@@ -16,17 +16,6 @@
 
 By synthesizing volatile Remote Patient Monitoring (RPM) alerts with historical and subjective patient data, ClinicalBridge generates a structured **Clinical Context Brief (CCB)** in under 60 seconds. This drastically reduces physician cognitive load and mitigates **alert fatigue** without compromising patient safety.
 
----
-
-## 👥 Authors & Team
-* **Yusuf Emre Çetin** (Student ID: `2102915`) - *Core Multi-Agent Orchestration, Webhook Architecture & Synthesis Node Engineering*
-* **Ayberk Palta** (Student ID: `2103386`) - *EHR Data Pipeline Development, Vector Database Management & RAG Integration*
-* **Görkem Dal** (Student ID: `2103773`) - *Sequential Pipeline Chain Engineering, Anamnesis Simulation & Token Optimization*
-
-**Academic Mentorship:** Artificial Intelligence Engineering Department, Bahçeşehir University (June 2026).
-
----
-
 ## 🏗️ Dual System Architecture
 
 This capstone project implements and empirically benchmarks **two distinct structural paradigms**:
