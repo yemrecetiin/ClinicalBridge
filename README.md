@@ -1,6 +1,5 @@
 # 🩺 ClinicalBridge: Bridging the Clinical Context Gap
 
-[![Course](https://img.shields.io/badge/Course-COP--3442%3A%20Prompt%20Engineering-blue)](https://bau.edu.tr/)
 [![University](https://img.shields.io/badge/University-Bah%C3%A7e%C5%9Fehir%20University-red)](https://bau.edu.tr/)
 [![Framework](https://img.shields.io/badge/Orchestration-n8n-orange)](https://n8n.io/)
 [![Model](https://img.shields.io/badge/LLM-Google%20Gemini-green)](https://deepmind.google/technologies/gemini/)
